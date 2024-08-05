@@ -38,6 +38,7 @@ body{
 .container{
     color: white;
     background-image: url("https://media.giphy.com/media/G0Odfjd78JTpu/giphy.gif");
+    background-repeat: no-repeat;
     width: 400px;
     margin: 0px auto;
     border-radius: 4px;

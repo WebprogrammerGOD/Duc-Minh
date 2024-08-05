@@ -1,5 +1,9 @@
-const searchInput = document.getElementsById("seacrh");
-const CityName = document.querySelector("search_input");
+/*General*/
+const API_KEY = "4269652c5e1b6a66a34f9d3d16ecc098";
+const DEFAULT_VALUE = "__";
+/*Weather status*/
+const searchInput = document.getElementById("search");
+const cityName = document.querySelector("searchInput");
 const weatherState = document.querySelector(".weather-state");
 const weatherIcon = document.querySelector(".weather-icon");
 const temperature = document.querySelector(".temperature");
