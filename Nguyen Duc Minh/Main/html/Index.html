@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/Style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/misc/icon/Icon.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <title>WorldTravel website</title>
+    </head>
+    <body>
+        <div class="nav">
+            <h2>WorldExplore website</h2>
+            <a href="#Home" class="nav-items">Home</a>
+            <a href="#Booking" class="nav-items">Booking</a>
+            <a href="#Support" class="nav-items">Support</a>
+        </div>
+        <div class="container">
+            <div id="Image" class="center">
+                <img src="/misc/pic/BingWallpaper (1).jpg" alt="Union Square, Manhattan, New York, USA" class="slides" width="100%">
+                <img src="/misc/pic/BingWallpaper (2).jpg" alt="Heidelberg on the river Neckar, Germany" class="slides" width="100%">
+                <img src="/misc/pic/BingWallpaper (4).jpg" alt="Himeji Castle, Himeji, Hyōgo Prefecture, Japan" class="slides" width="100%">
+                <span class="image-desc opacity">Image credit: Microsoft Bing</span>
+            </div>
+            <header class="center">WorldExplore</header>
+            <div id="Home" class="padding-16">
+                <h1 class="center">Welcome to our website</h1>
+                <div class="website-desc">
+                    <ul>Are you going to have a holiday with your family or friends?</ul>
+                    <ul>Well, just book your holiday at our webiste: WorldTravel website!</ul>
+                    <ul>We promise that our service is better than you wanted</ul>
+                    <ul>So quickly book your trip right now on our website for your perfection!</ul>
+                </div>
+            </div>
+            <div id="Booking" class="center padding-16">
+                <h1>Booking</h1>
+                <div class="row m-3">
+                    <div class="col d-flex justify-content-center align-items-center flex-column">
+                        <div class="input-group w-75">
+                            <input class="search-input" type="text" class="form-control" placeholder="Enter the place where you wanted to travel here" required>
+                            <button type="Submit">
+                                <b>Search</b>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Support" class="center padding-16">
+                <h1>Support</h1>
+                <div class="justify">
+                    <div class="signin">
+                        <h3>Not signed in?</h3>
+                        <a class="btn btn-primary" href="../html/Login.html">Sign in</a>
+                    </div>
+                    <div class="signup">
+                        <h3>Don't have an account?</h3>
+                        <a class="btn btn-primary" href="../html/Register.html">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer center">
+            <h2>WorldExplore website</h2>
+            <div class="contact">
+                <h2 class="contact">Need help? just contact us:</h2>
+                <img src="/misc/pic/Map.jpg" alt="Our office here" class="resize">
+                <p class="contact">Phone: +1 787878</p>
+                <p class="contact">Email: worldtravel@fastmail.com</p>
+                <p class="contact">Address: New York, USA</p>
+            </div>
+        </div>
+        <div class="JavaScript">
+            <script>w3.slideshow(".slides", 1500);</script>
+        </div>
+    </body>
+</html>

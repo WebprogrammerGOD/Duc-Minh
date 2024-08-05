@@ -1,0 +1,133 @@
+/*CSS default*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans JP", sans-serif;
+}
+/*Responsibilities*/
+@media screen and (max-width: 767px) {
+    h1{
+        font-weight: 300;
+        font-size: 20px;
+    }
+    header{
+        font-size: 24px;
+    }
+    .nav-items{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 768px),(max-width: 1023px) {
+    h1{
+        font-weight: 450;
+        font-size: 30px;
+    }
+    header{
+        font-size: 36px;
+    }
+    .nav-items{
+        font-size: 18px;
+    }
+}
+/*Default*/
+html{
+    scroll-behavior: smooth;
+}
+header{
+    font-weight: 800;
+    font-size: 48px;
+    text-shadow: 0 0 4px orange, 0 0 8px yellow;
+}
+h1{
+    padding-top: 80px;
+    font-weight: 600;
+    font-size: 40px;
+}
+h2{
+    color: black !important;
+    padding: 10px;
+}
+ul{
+    font-weight: 400;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px orange;
+}
+a{
+    color: coral;
+}
+button{
+    background-color: yellow;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px 8px;
+    margin: 10px 0px 20px 0px;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 16);
+}
+input{
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid lemonchiffon;
+    outline: none;
+    font-size: 16px;
+    margin-top: 8px;
+    padding: 8px;
+}
+input:focus{
+    background-color: snow;
+}
+/*IDs*/
+#Home{
+    max-width: 1024px;
+    margin: auto;
+}
+#Support{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+/*Classes*/
+.nav{
+    color: black;
+    background-color: orange;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 4px;
+}
+.nav-items{
+    color: moccasin;
+    height: 100%;
+    padding: 12px 16px;
+    font-size: 24px;
+}
+.nav-items:hover{
+    background-color: orangered;
+    color: lightyellow;
+}
+.image-desc{
+    opacity: 0.4;
+}
+.website-desc{
+    padding: 16px;
+}
+.center{
+    text-align: center;
+}
+.justify{
+    justify-content: space-evenly;
+}
+.signup{
+    border-top: 2px solid gold;
+}
+.footer{
+    background-color: darkorange;
+    border-radius: 4px;
+}
+.contact{
+    color: yellow !important;
+}
+.resize{
+    width: 25%;
+    height: 25%;
+}
