@@ -16,6 +16,10 @@ body{
     width: 100%;
     backdrop-filter: blur(0px);
 }
+h1{
+    font-weight: bolder;
+    font-size: 36px;
+}
 /*IDs*/
 #root{
     display: flex;
