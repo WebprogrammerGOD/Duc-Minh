@@ -20,6 +20,22 @@ h1{
     font-weight: bolder;
     font-size: 36px;
 }
+button{
+    width: 50%;
+    border: none;
+    font-size: 20px;
+    color: black;
+    background-color: darkgreen;
+    cursor: pointer;
+    padding: 4px 8px;
+    margin: 10px 0px 20px 0px;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 16);
+    opacity: 0.75;
+}
+a{
+    text-decoration: none;
+    color: greenyellow;
+}
 /*IDs*/
 #root{
     display: flex;
@@ -119,4 +135,8 @@ h1{
 }
 .additional-section .row .item .label {
     font-weight: bold;
+}
+.redirect {
+    display: flex;
+    justify-content: center;
 }

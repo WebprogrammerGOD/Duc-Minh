@@ -7,43 +7,42 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
         <title>Weather forecast</title>
     </head>
     <body>
         <div id="root">
-            <a class="btn btn-primary position-absolute top-0 start-0" href="/Main/html/Index.html">Back</a>
-            <div class="container w-25">
+            <div class="container">
                 <div class="info-wrapper">
-                    <h1 class="cityname">__</h1>
+                    <h1 class="city-name">__</h1>
                     <p class="weather-state">__</p>
                     <img src="http://openweathermap.org/img/wn.10d@2x.png" alt="weather icon" class="weather icon">
                     <p class="temperature">__</p>
                 </div>
-            </div>
-            <div class="additional-section">
-                <div class="row">
-                    <div class="item">
-                        <div class="label">Sunrise</div>
-                        <div class="value sunrise">__</div>
+                <div class="additional-section">
+                    <div class="row">
+                        <div class="item">
+                            <div class="label">Sunrise</div>
+                            <div class="value sunrise">__</div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Sunset</div>
+                            <div class="value sunset">__</div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <div class="label">Sunset</div>
-                        <div class="value sunset">__</div>
+                    <div class="row">
+                        <div class="item">
+                            <div class="label">Humidity</div>
+                            <div class="value"><span class="humidity">__</span>%</div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Wind</div>
+                            <div class="value"><span class="wind-speed"></span> km/h</div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="item">
-                        <div class="label">Humidity</div>
-                        <div class="value"><span class="humidity">__</span>%</div>
-                    </div>
-                    <div class="item">
-                        <div class="label">Wind</div>
-                        <div class="value"><span class="wind-speed"></span> km/h</div>
-                    </div>
-                </div>
+                <button class="redirect"><a href="/Main/html/Index.html">Back</a></button>
             </div>
         </div>
-        <script src="Core.js"></script>
+        <script src="../Main/js/App.js"></script>
     </body>
 </html>
