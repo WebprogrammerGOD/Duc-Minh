@@ -22,3 +22,6 @@ searchInput.addEventListener("change", (event) => {
         temperature.innerHTML = Math.round(data.main.temp) || DEFAULT_VALUE;
     })
 })
+function redirect(){
+    window.location.href = "../SIGMA-BOI/Interface.html"
+}
