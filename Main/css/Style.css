@@ -167,7 +167,8 @@ input:focus{
     color: lightyellow;
 }
 .image-desc{
-    opacity: 0.4;
+    opacity: 0.5;
+    padding-top: 16px;
 }
 .website-desc{
     padding: 16px;
