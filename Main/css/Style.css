@@ -86,6 +86,65 @@ input:focus{
     padding-right: 100px;
 }
 /*Classes*/
+
+.weather{
+    color: white;
+    background-image: url("https://media.giphy.com/media/G0Odfjd78JTpu/giphy.gif");
+    background-repeat: no-repeat;
+    width: 400px;
+    margin: 0px auto;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+}
+.info-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 80px 50px;
+}
+.city-name{
+    font-size: 20px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+.weather-state{
+    font-size: 12px;
+}
+.temperature{
+    font-size: 80px;
+    font-weight: lighter;
+    line-height: 1;
+    position: relative;
+}
+.temperature::after{
+    content: "o";
+    position: absolute;
+    font-size: 30px;
+}
+.additional-section{
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: white;
+}
+.additional-section .row{
+    margin-bottom: 4px;
+    display: flex;
+}
+.additional-section .row .item{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.additional-section .row .item .label {
+    font-weight: bold;
+}
 .nav{
     color: black;
     background-color: orange;
