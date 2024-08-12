@@ -23,5 +23,5 @@ searchInput.addEventListener("change", (event) => {
     })
 })
 function redirect(){
-    window.location.href = "../SIGMA-BOI/Interface.html"
+    window.location.href = "/SIGMA-BOI/Interface.html"
 }
