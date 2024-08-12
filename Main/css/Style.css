@@ -54,6 +54,7 @@ ul{
 }
 a{
     color: coral;
+    text-decoration: none;
 }
 button{
     background-color: yellow;
@@ -67,7 +68,7 @@ button{
 input{
     width: 80%;
     border: none;
-    border-bottom: 2px solid lemonchiffon;
+    border-bottom: 2px solid orange;
     outline: none;
     font-size: 16px;
     margin-top: 8px;
@@ -84,6 +85,7 @@ input:focus{
 #Support{
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 32px;
 }
 /*Classes*/
 
@@ -176,8 +178,12 @@ input:focus{
 .justify{
     justify-content: space-evenly;
 }
+.signin{
+    padding-bottom: 16px;
+}
 .signup{
     border-top: 2px solid gold;
+    padding-top: 4px;
 }
 .footer{
     background-color: darkorange;

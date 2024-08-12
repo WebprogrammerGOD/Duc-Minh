@@ -1,5 +1,5 @@
 /*General*/
-const API_KEY = "4269652c5e1b6a66a34f9d3d16ecc098";
+const API_KEY = "6ab9ff8701516ad788b22be4fd93b362";
 const DEFAULT_VALUE = "__";
 /*Weather status*/
 const searchInput = document.getElementById("search");
