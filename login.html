@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/Html-link.css">
+        <link rel="stylesheet" href="Main/css/account.css">
         <title>Log in</title>
     </head>
     <body>
@@ -16,21 +16,25 @@
             <div class="box">
                 <h1 class="display-6">Log in</h1>
                 <form>
-                    <div class="text-box input-group flex-nowarp">
-                        <span class="input-group-text" id="addon-wrapping">Email</span>
-                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email" aria-describedby="addon-wrapping" required>
+                    <div class="mb-3">
+                        <label class="form-label" id="addon-wrapping">Email</label>
+                        <input type="email" class="form-control" placeholder="example@email.com" aria-label="Email" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">We won't share your email to anyone else</div>
                     </div>
-                    <div class="text-box input-group flex-nowarp">
-                        <span class="input-group-text" id="addon-wrapping">Password</span>
-                        <input type="password" class="form-control" placeholder="Enter your password" aria-label="Password" aria-describedby="addon-wrapping" required>
+                    <div class="mb-3">
+                        <label class="form-label" id="addon-wrapping">Password</label>
+                        <input type="password" class="form-control" aria-label="Password" aria-describedby="addon-wrapping" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label class="form-check-label">Remember me</label>
                     </div>
                     <div class="text-box">
-                        <button type="submit">Log in</button>
+                        <button type="submit" class="btn btn-success"><a href="index.html">Log in</a></button>
                         <span>Don't have an account?</span>
-                        <a href="Register.html" class="redirect">Register</a>
+                        <a href="register.html" class="redirect">Register</a>
                     </div>
                 </form>
-                <a class="btn btn-primary" href="../html/Index.html">Return to website</a>
                 <figcaption class="image-desc blockquote-footer">Image credit: Microsoft Bing</figcaption>
             </div>
         </div>

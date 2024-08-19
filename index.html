@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/Style.css">
+        <link rel="stylesheet" href="Main/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -15,9 +15,9 @@
     <body>
         <div class="nav">
             <h2>WorldWeather website</h2>
-            <a href="#Home" class="nav-items">Home</a>
-            <a href="#Weather" class="nav-items">Weather</a>
-            <a href="#Support" class="nav-items">Support</a>
+            <li><a href="#Home" class="nav-items">Home</a></li>
+            <li><a href="#Weather" class="nav-items">Weather</a></li>
+            <li><a href="login.html" class="nav-items">Login</a></li>
         </div>
         <div class="container">
             <div id="Image" class="center">
@@ -30,11 +30,11 @@
             <div id="Home" class="padding-16">
                 <h1 class="center display-1">Welcome to our website</h1>
                 <div class="website-desc">
-                    <ul>Are you going to make any plan outside your home?</ul>
-                    <ul>Or are you going to travel anywhere with your friend?</ul>
-                    <ul>Well, just check your holiday at our webiste: WorldWeather website!</ul>
-                    <ul>We promise that our service is more correct than you wanted</ul>
-                    <ul>So quickly check the weather right now on our website for your perfection!</ul>
+                    <p>Are you going to make any plan outside your home?</p>
+                    <p>Or are you going to travel anywhere with your friend?</p>
+                    <p>Well, just check your holiday at our webiste: WorldWeather website!</p>
+                    <p>We promise that our service is more correct than you wanted</p>
+                    <p>So quickly check the weather right now on our website for your perfection!</p>
                 </div>
             </div>
             <div id="Weather" class="center padding-16">
@@ -42,7 +42,7 @@
                 <div class="row m-3">
                     <div class="col d-flex justify-content-center align-items-center flex-column">
                         <div class="input-group w-50">
-                            <input id="search" class="search-input" type="text" class="form-control" placeholder="Enter the place where you wanted to check its weather here" required>
+                            <input id="search" class="search-input col" type="text" class="form-control" placeholder="Enter the place where you wanted to check its weather here" required>
                         </div>
                     </div>
                 </div>
@@ -76,33 +76,18 @@
                     </div>
                 </div>
             </div>
-            <div id="Support" class="center padding-16">
-                <h1 class="display-6">Support</h1>
-                <div class="justify">
-                    <div class="signin">
-                        <h3 class="h3">Not signed in?</h3>
-                        <a class="btn btn-primary" href="../html/Login.html">Sign in</a>
-                    </div>
-                    <div class="signup">
-                        <h3 class="h3">Don't have an account?</h3>
-                        <a class="btn btn-primary" href="../html/Register.html">Sign up</a>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="footer center">
             <h2>WorldWeather website</h2>
             <div class="contact">
                 <h2 class="contact">Need help? just contact us:</h2>
                 <img src="/misc/pic/Map.jpg" alt="Our office here" class="resize">
-                <p class="contact">Phone: +1 787878</p>
+                <p class="contact">Phone: +1 78787878</p>
                 <p class="contact">Email: worldtravel@fastmail.com</p>
                 <p class="contact">Address: New York, USA</p>
             </div>
         </div>
-        <div class="JavaScript">
-            <script>w3.slideshow(".slides", 1500);</script>
-            <script src="../js/App.js"></script>
-        </div>
+        <script>w3.slideshow(".slides", 1500);</script>
+        <script src="Main/js/App.js"></script>
     </body>
 </html>

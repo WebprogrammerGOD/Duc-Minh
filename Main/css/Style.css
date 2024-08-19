@@ -47,23 +47,15 @@ h2{
     color: black !important;
     padding: 10px;
 }
-ul{
-    font-weight: 400;
-    font-size: 20px;
-    text-shadow: 2px 2px 4px orange;
-}
 a{
-    color: coral;
     text-decoration: none;
 }
 button{
-    background-color: yellow;
+    background-color: darkgoldenrod;
     border: none;
     font-size: 20px;
     cursor: pointer;
     padding: 4px 8px;
-    margin: 10px 0px 20px 0px;
-    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 16);
 }
 input{
     width: 80%;
@@ -82,13 +74,10 @@ input:focus{
     max-width: 1024px;
     margin: auto;
 }
-#Support{
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 32px;
+#Weather{
+    padding-bottom: 24px;
 }
 /*Classes*/
-
 .weather{
     color: white;
     background-image: url("https://media.giphy.com/media/G0Odfjd78JTpu/giphy.gif");
@@ -148,23 +137,27 @@ input:focus{
     font-weight: bold;
 }
 .nav{
-    color: black;
-    background-color: orange;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dddddd;
     position: fixed;
     width: 100%;
-    z-index: 1;
-    padding: 10px;
-    border-radius: 4px;
 }
 .nav-items{
-    color: moccasin;
+    float: left;
+    padding: 16px 20px;
     height: 100%;
-    padding: 12px 16px;
     font-size: 24px;
 }
+.nav-items li{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
 .nav-items:hover{
-    background-color: orangered;
-    color: lightyellow;
+    background-color: lightgray;
 }
 .image-desc{
     opacity: 0.5;
@@ -179,19 +172,12 @@ input:focus{
 .justify{
     justify-content: space-evenly;
 }
-.signin{
-    padding-bottom: 16px;
-}
-.signup{
-    border-top: 2px solid gold;
-    padding-top: 4px;
-}
 .footer{
-    background-color: darkorange;
+    background-color: lightblue;
     border-radius: 4px;
 }
 .contact{
-    color: yellow !important;
+    color: white !important;
 }
 .resize{
     width: 25%;
