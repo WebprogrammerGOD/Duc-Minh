@@ -144,10 +144,8 @@ input:focus{
     height: 100%;
     font-size: 24px;
 }
-.nav-items li{
-    display: block;
-    color: white;
-    text-decoration: none;
+.header-right{
+    float: right;
 }
 .nav-items:hover{
     background-color: lightgray;
