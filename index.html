@@ -21,6 +21,7 @@
         </div>
         <div class="container">
             <div id="Image" class="center">
+                <h1 class="display-5">Top Destinations</h1>
                 <img src="/misc/pic/BingWallpaper (1).jpg" alt="Union Square, Manhattan, New York, USA" class="slides" width="100%">
                 <img src="/misc/pic/BingWallpaper (2).jpg" alt="Heidelberg on the river Neckar, Germany" class="slides" width="100%">
                 <img src="/misc/pic/BingWallpaper (4).jpg" alt="Himeji Castle, Himeji, Hyōgo Prefecture, Japan" class="slides" width="100%">
@@ -29,10 +30,17 @@
             <header class="center">WorldWeather</header>
             <div id="Weather" class="center padding-16">
                 <h1 class="display-6">Forecast</h1>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Preferred languages</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">VN</a></li>
+                        <li><a class="dropdown-item" href="#">EN</a></li>
+                    </ul>
+                </div>
                 <div class="row m-3">
                     <div class="col d-flex justify-content-center align-items-center flex-column">
                         <div class="input-group w-50">
-                            <input id="search" class="search-input col" type="text" class="form-control" placeholder="Enter the place where you wanted to check its weather here" required>
+                            <input id="search" class="search-input col" type="text" class="form-control" placeholder="Your preferred place here" required>
                         </div>
                     </div>
                 </div>

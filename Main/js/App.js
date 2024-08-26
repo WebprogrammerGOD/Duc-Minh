@@ -12,12 +12,11 @@ const humidity = document.querySelector(".humidity");
 const windSpeed = document.querySelector(".wind-speed");
 /*Fetch data*/
 searchInput.addEventListener("change", (event) => {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${event.target.value}&appid=${API_KEY}&lang=vi&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${event.target.value}&appid=${API_KEY}&lang=RU&units=metric`)
     .then((response) => response.json())
     .then((data) => {
         cityName.innerHTML = data.name || DEFAULT_VALUE;
         weatherState.innerHTML = data.weather[0].description || DEFAULT_VALUE;
         temperature.innerHTML = Math.round(data.main.temp) || DEFAULT_VALUE;
-        sunrise.innerHTML = data.weather[0].sunrise || DEFAULT_VALUE; 
     })
 })
