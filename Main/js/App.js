@@ -9,7 +9,7 @@ const weatherIcon = document.querySelector(".weather-icon");
 const temperature = document.querySelector(".temperature");
 const sunrise = document.querySelector(".sunrise");
 const sunset = document.querySelector(".sunset");
-const humidity = document.querySelector(".humidity")
+const humidity = document.querySelector(".humidity");
 const windSpeed = document.querySelector(".wind-speed");
 /*Fetch data*/
 searchInput.addEventListener("change", (event) => {
