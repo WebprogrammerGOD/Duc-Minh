@@ -33,11 +33,6 @@
 html{
     scroll-behavior: smooth;
 }
-header{
-    font-weight: 800;
-    font-size: 48px;
-    text-shadow: 0 0 4px orangered, 0 0 8px red;
-}
 h1{
     padding-top: 80px;
     font-weight: 600;
@@ -46,9 +41,6 @@ h1{
 h2{
     color: black !important;
     padding: 10px;
-}
-a{
-    text-decoration: none;
 }
 input{
     width: 80%;
@@ -147,9 +139,6 @@ input:focus{
     height: 100%;
     font-size: 24px;
 }
-.header-right{
-    float: right;
-}
 .nav-items:hover{
     background-color: lightgray;
 }
@@ -162,9 +151,6 @@ input:focus{
 }
 .center{
     text-align: center;
-}
-.justify{
-    justify-content: space-evenly;
 }
 .footer{
     background-color: lightblue;
