@@ -6,25 +6,48 @@
         <link rel="stylesheet" href="Main/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="/misc/icon/Icon.jpg" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
-        <script src="https://www.w3schools.com/lib/w3.js"></script>
         <title>WorldWeather website</title>
     </head>
     <body>
         <div class="nav">
-            <h2>WorldWeather website</h2>
+            <h2 class="name">WorldWeather website</h2>
             <a href="#Weather" class="nav-items">Weather</a>
             <a href="#Home" class="nav-items">Desc</a>
             <a href="login.html" class="nav-items">Login</a>
         </div>
         <div class="container">
-            <div id="Image" class="center">
-                <h1 class="display-5">Top Destinations</h1>
-                <img src="/misc/pic/BingWallpaper (1).jpg" alt="Union Square, Manhattan, New York, USA" class="slides" width="100%">
-                <img src="/misc/pic/BingWallpaper (2).jpg" alt="Heidelberg on the river Neckar, Germany" class="slides" width="100%">
-                <img src="/misc/pic/BingWallpaper (4).jpg" alt="Himeji Castle, Himeji, Hyōgo Prefecture, Japan" class="slides" width="100%">
+            <div id="Image" class="row align-items-center">
+                <h1 class="display-5 center">Top Destinations</h1>
+                <div class="card col-4">
+                    <img src="/misc/pic/BingWallpaper (1).jpg" alt="Union Square, Manhattan, New York, USA" class="slides" width="100%">
+                    <div class="card-body">
+                        <h5 class="card-title">Union Square, Manhattan, New York, USA</h5>
+                        <p class="card-text">Union Square is a historic intersection and surrounding neighborhood in Manhattan, New York City, United States, located where Broadway and the former Bowery Road – now Fourth Avenue – came together in the early 19th century.</p>
+                        <a href="https://en.m.wikipedia.org/wiki/Union_Square,_Manhattan" class="btn btn-primary">Find out</a>
+                    </div>
+                </div>
+                <div class="card col-4">
+                    <img src="/misc/pic/BingWallpaper (2).jpg" alt="Heidelberg on the river Neckar, Germany" class="slides" width="100%">
+                    <div class="card-body">
+                        <h5 class="card-title">Heidelberg on the river Neckar, Germany</h5>
+                        <p class="card-text">Heidelberg is a city in the German state of Baden-Württemberg, situated on the river Neckar in south-west Germany. </p>
+                        <a href="https://en.m.wikipedia.org/wiki/Heidelberg" class="btn btn-primary">Find out</a>
+                    </div>
+                </div>
+                <div class="card col-4">
+                    <img src="/misc/pic/BingWallpaper (4).jpg" alt="Himeji Castle, Himeji, Hyōgo Prefecture, Japan" class="slides" width="100%">
+                    <div class="card-body">
+                        <h5 class="card-title">Himeji Castle, Himeji, Hyōgo Prefecture, Japan</h5>
+                        <p class="card-text">Himeji Castle is a hilltop Japanese castle complex situated in Himeji, a city in the Hyōgo Prefecture of Japan.</p>
+                        <a href="https://en.m.wikipedia.org/wiki/Himeji_Castle" class="btn btn-primary">Find out</a>
+                    </div>
+                </div>
                 <figcaption class="image-desc opacity blockquote-footer">Image credit: Microsoft Bing</figcaption>
             </div>
             <header class="center">WorldWeather</header>
@@ -86,7 +109,7 @@
             </div>
         </div>
         <div class="footer text-center">
-            <h2>WorldWeather website</h2>
+            <h2 class="name">WorldWeather website</h2>
             <div class="contact row align-items-center">
                 <div class="col">
                     <h2 class="contact">Need help? just contact us:</h2>
@@ -97,7 +120,6 @@
                 <img src="/misc/pic/Map.jpg" alt="Our office here" class="resize col-4">
             </div>
         </div>
-        <script>w3.slideshow(".slides", 1500);</script>
         <script src="Main/js/App.js"></script>
     </body>
 </html>

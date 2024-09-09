@@ -71,6 +71,9 @@ input:focus{
     padding-bottom: 24px;
 }
 /*Classes*/
+.name{
+    font-family: "Protest Guerrilla", sans-serif;
+}
 .weather{
     color: white;
     background-image: url("https://media.giphy.com/media/G0Odfjd78JTpu/giphy.gif");
