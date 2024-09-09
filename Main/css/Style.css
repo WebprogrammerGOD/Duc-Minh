@@ -36,7 +36,7 @@ html{
 header{
     font-weight: 800;
     font-size: 48px;
-    text-shadow: 0 0 4px orange, 0 0 8px yellow;
+    text-shadow: 0 0 4px orangered, 0 0 8px red;
 }
 h1{
     padding-top: 80px;
@@ -53,7 +53,7 @@ a{
 input{
     width: 80%;
     border: none;
-    border-bottom: 2px solid orangered;
+    border-bottom: 2px solid red;
     outline: none;
     font-size: 16px;
     margin-top: 8px;

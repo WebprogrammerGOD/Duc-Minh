@@ -12,7 +12,7 @@ const humidity = document.querySelector(".humidity");
 const windSpeed = document.querySelector(".wind-speed");
 /*Fetch data*/
 searchInput.addEventListener("change", (event) => {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${event.target.value}&appid=${API_KEY}&lang=RU&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${event.target.value}&appid=${API_KEY}&lang=en&units=metric`)
     .then((response) => response.json())
     .then((data) => {
         cityName.innerHTML = data.name || DEFAULT_VALUE;
