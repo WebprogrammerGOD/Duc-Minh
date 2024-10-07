@@ -10,24 +10,13 @@ html{
 }
 h1{
     padding-top: 100px;
+    padding-bottom: 20px;
     font-weight: 600;
     font-size: 40px;
 }
 h2{
     color: white !important;
     padding: 10px;
-}
-input{
-    width: 80%;
-    border: none;
-    border-bottom: 2px solid red;
-    outline: none;
-    font-size: 16px;
-    margin-top: 8px;
-    padding: 8px;
-}
-input:focus{
-    background-color: snow;
 }
 /*IDs*/
 #Home{
