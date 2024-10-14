@@ -94,7 +94,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background-color: #444;
+    background-color: lightsteelblue;
     color: white;
     position: fixed;
     width: 100%;
@@ -108,7 +108,7 @@ h2{
     text-decoration: none;
 }
 .nav-items:hover{
-    background-color: #ff336f;
+    background-color: lightskyblue;
     color: white;
     padding: 12px 16px;
     border-radius: 4px;
