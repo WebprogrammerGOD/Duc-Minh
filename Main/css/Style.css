@@ -90,7 +90,7 @@ h2{
 }
 .header{
     display: flex;
-    z-index: 3;
+    z-index: 4;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
