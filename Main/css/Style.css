@@ -25,9 +25,15 @@ h2{
     color: white;
     background-size: 100%;
     margin: auto;
+    width: 100%;
+    padding: 40px 20px 40px 20px;
+    height: 60vh;
 }
 #Weather{
-    padding-bottom: 24px;
+    padding-bottom: 60px;
+}
+#Booking{
+    padding-bottom: 48px;
 }
 /*Classes*/
 .name{
@@ -40,7 +46,7 @@ h2{
     color: white;
     background-image: url(/misc/pic/BingWallpaper\ \(7\).jpg);
     background-repeat: no-repeat;
-    width: 800px;
+    width: 400px;
     margin: 0px auto;
     border-radius: 4px;
     font-size: 14px;
@@ -52,7 +58,7 @@ h2{
     justify-content: center;
     align-items: center;
     height: 60vh;
-    padding: 80px 50px;
+    padding: 80px 40px;
     color: black !important;
 }
 .city-name{
@@ -115,7 +121,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background-color: lightsteelblue;
+    background-color: lightskyblue;
     color: white;
     position: fixed;
     width: 100%;
@@ -124,15 +130,16 @@ h2{
     text-decoration: none;
 }
 .nav-items{
+    font-family: "Montserrat", sans-serif;
     list-style-type: none;
     float: left;
     padding: 12px 16px;
     height: 100%;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
 }
 .nav-items:hover{
-    background-color: lightskyblue;
+    background-color: lightblue;
     color: white;
     padding: 12px 16px;
     border-radius: 4px;
@@ -142,13 +149,14 @@ h2{
     padding-top: 16px;
 }
 .website-desc{
-    padding: 16px;
+    display: flex;
+    flex-direction: column;
 }
 .center{
     text-align: center;
 }
 .footer{
-    background-color: #87bbff;
+    background-color: mediumpurple;
     border-radius: 4px;
 }
 .contact{
