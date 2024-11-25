@@ -20,7 +20,10 @@ h2{
 }
 /*IDs*/
 #Home{
-    max-width: 1024px;
+    background-image: url(/misc/pic/BingWallpaper\ \(6\).jpg);
+    font-size: 20px;
+    color: white;
+    background-size: 100%;
     margin: auto;
 }
 #Weather{
@@ -28,17 +31,19 @@ h2{
 }
 /*Classes*/
 .name{
-    font-family: "Protest Guerrilla", sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+.title{
+    font-family: "Montserrat", sans-serif;
 }
 .weather{
     color: white;
-    background-image: url("https://media.giphy.com/media/G0Odfjd78JTpu/giphy.gif");
+    background-image: url(/misc/pic/BingWallpaper\ \(7\).jpg);
     background-repeat: no-repeat;
-    width: 400px;
+    width: 800px;
     margin: 0px auto;
     border-radius: 4px;
     font-size: 14px;
-    font-family: "Open Sans", sans-serif;
     border: 1px solid rgba(255, 255, 255, 0.233);
 }
 .info-wrapper{
@@ -48,6 +53,7 @@ h2{
     align-items: center;
     height: 60vh;
     padding: 80px 50px;
+    color: black !important;
 }
 .city-name{
     font-size: 28px;
@@ -55,7 +61,7 @@ h2{
     margin-bottom: 8px;
 }
 .weather-state{
-    font-size: 12px;
+    font-size: 14px;
 }
 .temperature{
     font-size: 80px;
@@ -67,6 +73,21 @@ h2{
     content: "o";
     position: absolute;
     font-size: 30px;
+}
+.feel-like{
+    padding-top: 8px;
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 1;
+    position: relative;
+}
+.feel-like::before{
+    content: "Feel like: ";
+}
+.feel-like::after{
+    content: "o";
+    position: absolute;
+    font-size: 10px;
 }
 .additional-section{
     border-top: 1px solid white;
@@ -107,7 +128,7 @@ h2{
     float: left;
     padding: 12px 16px;
     height: 100%;
-    font-size: 24px;
+    font-size: 16px;
     text-decoration: none;
 }
 .nav-items:hover{

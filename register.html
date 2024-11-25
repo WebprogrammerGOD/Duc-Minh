@@ -6,8 +6,7 @@
         <link rel="shortcut icon" href="/misc/icon/Icon.jpg" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="Main/css/account.css">
         <title>Register</title>
@@ -15,15 +14,19 @@
     <body>
         <div class="container">
             <div class="box">
-                <h1>Register</h1>
-                    <form class="required">
+                <h1 class="display-6">Register</h1>
+                    <form id="register-form">
+                        <div class="mb-3">
+                            <label class="form-label" id="Username">Username</label>
+                            <input type="text" class="form-control" required>
+                        </div>
                         <div class="mb-3">
                             <label class="form-label" id="Email">Email</label>
                             <input type="email" class="form-control" placeholder="example@email.com" aria-describedby="emailHelp" required>
                             <div id="emailHelp" class="form-text">We won't share your email address to anyone else</div>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Password</label>
+                            <label class="form-label" id="Password">Password</label>
                             <input type="password" class="form-control" required>
                             <div id="passwordHelp" class="form-text">Your password must have 8 characters or longer</div>
                         </div>
@@ -33,7 +36,7 @@
                             <div id="passwordHelp" class="form-text">Enter your password one more time</div>
                         </div>
                         <div class="text-box">
-                            <a type="submit" class="btn btn-primary" href="index.html">Register</a>
+                            <a type="submit" class="btn btn-primary" href="login.html">Register</a>
                             <p>Already have an account? <a href="login.html" class="redirect">Log in</a></p>
                         </div>
                     </form>
