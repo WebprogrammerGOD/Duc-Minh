@@ -9,8 +9,9 @@ import {
     get, 
     set, 
     update, 
-    remove 
+    remove
 } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js';
+
 // Config
 const firebaseConfig = {
     apiKey: "AIzaSyAFVGHTaELA9fNWopoKARPJ4r9UXNfhVSI",
@@ -22,24 +23,8 @@ const firebaseConfig = {
     appId: "1:968962042332:web:ff17956b0e2b2f9b7e0719",
     measurementId: "G-YG70W999GY"
 };
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const db = getDatabase();
-// Register forum
-const form = document.getElementById("register.form")
-form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const username = document.getElementById("Username").value;
-    const email = document.getElementById("Email").value;
-    const password = document.getElementById("Password").value;
-
-    const response = await fetch("/register", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, email, password })
-    });
-
-    const result = await response.json();
-    alert(result.message);
-});

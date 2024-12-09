@@ -4,6 +4,8 @@ const DEFAULT_VALUE = "__";
 
 // Weather status
 const searchInput = document.getElementById("search");
+
+const time = document.querySelector(".time");
 const cityName = document.querySelector(".city-name");
 const weatherState = document.querySelector(".weather-state");
 const temperature = document.querySelector(".temperature");
@@ -31,6 +33,7 @@ searchInput.addEventListener("change", (event) => {
         }
 
         // Return data
+        time.innerHTML = new Date(data.dt * 1000).toLocaleTimeString() || DEFAULT_VALUE;
         cityName.innerHTML = data.name || DEFAULT_VALUE;
         weatherState.innerHTML = data.weather[0].description || DEFAULT_VALUE;
         temperature.innerHTML = Math.round(data.main.temp) || DEFAULT_VALUE;
