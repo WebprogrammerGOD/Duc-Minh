@@ -35,6 +35,13 @@ h2{
 #Booking{
     padding-bottom: 48px;
 }
+#FAQs{
+    padding-bottom: 16px;
+}
+#Another-questions{
+    border-top: 4px solid lightblue;
+    padding: 24px 0;
+}
 /*Classes*/
 .name{
     font-family: "Montserrat", sans-serif;

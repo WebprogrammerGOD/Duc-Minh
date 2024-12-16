@@ -1,16 +1,11 @@
 // Import
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { 
     getDatabase, 
     ref, 
-    child, 
-    get, 
-    set, 
-    update, 
-    remove
-} from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js';
+    set,
+} from 'https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js';
 
 // Config
 const firebaseConfig = {
@@ -28,3 +23,44 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const db = getDatabase();
+
+//Functions
+let username = document.getElementById("Username");
+let email = document.getElementById("Email");
+let password = document.getElementById("Password");
+let confirm = document.getElementById("repeat");
+
+let subBtn = document.getElementById("sub");
+
+function addData() {
+    if (username.value.trim() === "") {
+        alert("Please type your username");
+        return;
+    }
+    if (email.value.trim() == "") {
+        alert("Please type your email");
+        return;
+    }
+    if (password.value.trim() == "") {
+        alert("Please type your password");
+        return;
+    }
+    else if (confirm.value !== password.value) {
+        alert("Your confirm password is incorrect");
+        return;
+    }
+    set(ref(db, "UserSet/" + username.value), {
+        username: String(username.value),
+        email: email.value,
+        password: String(password.value),
+    })
+    .then(() => {
+        alert("Successfully added your data");
+    })
+    .catch((error) => {
+        alert("ERROR: Can't add your data \n Please try again later");
+        console.log(error);
+    })
+}
+
+subBtn.addEventListener("click", addData);

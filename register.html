@@ -22,7 +22,7 @@
                     WorldWeather
                 </h2>
             </a>
-            <a href="#Weather" class="nav-items">Weather</a>
+            <a href="index.html" class="nav-items">Weather</a>
             <a href="hub.html" class="nav-items">Travel hub</a>
             <a href="login.html" class="nav-items">Login</a>
             <a href="support.html" class="nav-items">Support</a>
@@ -32,22 +32,22 @@
                 <h1>Create new account</h1>
                 <form id="register-form">
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Username" required>
+                        <input type="text" id="Username" class="form-control" placeholder="Username" required>
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" placeholder="Email" required>
+                        <input type="email" id="Email" class="form-control" placeholder="Email" required>
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-control" placeholder="Password" required>
+                        <input type="password" id="Password" class="form-control" placeholder="Password" required>
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-control" placeholder="Confirm password" required>
+                        <input type="password" id="repeat" class="form-control" placeholder="Confirm password" required>
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" id="Agree" class="form-check-input">
-                        <label class="form-check-label">I agree with Privacy Policy, Terms and conditions of sale and Websites terms and conditions of use</label>
+                        <label class="form-check-label">I agree with Privacy Policy and Websites terms and conditions of use</label>
                     </div>
-                    <a type="submit" class="btn btn-primary" href="login.html">Create account</a>
+                    <a type="submit" id="sub" class="btn btn-primary" href="login.html">Create account</a>
                     <div class="text-box">
                         <p>Already have an account? <a href="login.html" class="redirect">Log in</a></p>
                     </div>
@@ -68,12 +68,12 @@
                     <p class="contact">Phone: +1 42069420</p>
                     <p class="contact">Email: worldtravel@fastmail.com</p>
                     <p class="contact">Address: New York, USA</p>
+                    <p class="contact"><a href="questions.html">Ask us a question</a></p>
                 </div>
                 <div class="col d-flex justify-content-center align-items-center flex-column">
                     <img src="/misc/pic/Map.jpg" alt="Our office here" class="resize">
                     <figcaption>Our office here</figcaption>
                 </div>
-                <figcaption class="image-desc opacity blockquote-footer">Image credit: Microsoft Bing</figcaption>
             </div>
         </div>
         <script src="./Main/js/Account.js"></script>
