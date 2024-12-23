@@ -1,8 +1,9 @@
-/*Css default*/
+/*CSS Default*/
 *{
     margin: 0;
     padding: 0;
     font-family: "Noto Sans JP", sans-serif;
+    box-sizing: border-box;
 }
 /*Default*/
 html{
@@ -37,6 +38,7 @@ h2{
     width: 100%;
 }
 .logo{
+    color: white;
     text-decoration: none;
 }
 .nav-items{
@@ -58,21 +60,6 @@ h2{
     opacity: 0.5;
     padding-top: 16px;
 }
-.website-desc{
-    display: flex;
-    flex-direction: column;
-}
 .center{
     text-align: center;
-}
-.footer{
-    background-color: #eee;
-    border-radius: 4px;
-}
-.contact{
-    color: black !important;
-}
-.resize{
-    width: 40%;
-    height: 40%;
 }

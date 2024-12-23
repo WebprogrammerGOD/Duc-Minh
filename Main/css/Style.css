@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "Noto Sans JP", sans-serif;
+    box-sizing: border-box;
 }
 /*Default*/
 html{
@@ -39,8 +40,7 @@ h2{
     padding-bottom: 16px;
 }
 #Another-questions{
-    border-top: 4px solid lightblue;
-    padding: 24px 0;
+    padding-bottom: 32px;
 }
 /*Classes*/
 .name{
@@ -48,6 +48,12 @@ h2{
 }
 .title{
     font-family: "Montserrat", sans-serif;
+}
+.head-input{
+    background-color: #666;
+    color: #f3f3f3;
+    caret-color: #f3f3f3;
+    border: none;
 }
 .weather{
     background-image: url(/misc/pic/BingWallpaper\ \(7\).jpg);
@@ -155,6 +161,9 @@ h2{
 .website-desc{
     display: flex;
     flex-direction: column;
+}
+.blue{
+    color: lightblue;
 }
 .center{
     text-align: center;

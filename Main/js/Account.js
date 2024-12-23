@@ -32,6 +32,7 @@ let confirm = document.getElementById("repeat");
 
 let subBtn = document.getElementById("sub");
 
+//Add new account
 function addData() {
     if (username.value.trim() === "") {
         alert("Please type your username");
@@ -49,11 +50,13 @@ function addData() {
         alert("Your confirm password is incorrect");
         return;
     }
+    
     set(ref(db, "UserSet/" + username.value), {
         username: String(username.value),
         email: email.value,
         password: String(password.value),
     })
+
     .then(() => {
         alert("Successfully added your data");
     })

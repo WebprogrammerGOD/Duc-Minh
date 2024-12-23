@@ -16,19 +16,20 @@ const sunset = document.querySelector(".sunset");
 const humidity = document.querySelector(".humidity");
 const windSpeed = document.querySelector(".wind-speed");
 
+const country = document.querySelector(".country");
+
 // Fetch data
 searchInput.addEventListener("change", (event) => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${event.target.value}&appid=${API_KEY}&lang=en&units=metric`)
     .then((response) => response.json())
     .then((data) => {
         // Return error messages
-        if (data.cod == '404'){
+        if (data.cod == '404') {
             alert('Cannot find the city');
             return;
         }
-
-        else if (data.cod == '429'){
-            alert('The forecast is on cooldown');
+        else if (data.cod == '429') {
+            alert('Wait for a moment');
             return;
         }
 
@@ -43,5 +44,7 @@ searchInput.addEventListener("change", (event) => {
         sunset.innerHTML = new Date(data.sys.sunset * 1000).toLocaleTimeString() || DEFAULT_VALUE;
         humidity.innerHTML = data.main.humidity || DEFAULT_VALUE;
         windSpeed.innerHTML = Math.round(data.wind.speed) || DEFAULT_VALUE;
+
+        country.innerHTML = data.sys.country || DEFAULT_VALUE;
     })
 })
