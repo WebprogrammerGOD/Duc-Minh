@@ -60,6 +60,25 @@ h2{
     opacity: 0.5;
     padding-top: 16px;
 }
+.card-heading{
+    color: black;
+    text-decoration: none;
+}
+.card-heading:hover{
+    color: lightblue;
+    text-decoration: solid;
+}
 .center{
     text-align: center;
+}
+.footer{
+    background-color: #eee;
+    border-radius: 4px;
+}
+.contact{
+    color: black !important;
+}
+.resize{
+    width: 40%;
+    height: 40%;
 }
